@@ -31,14 +31,13 @@ class _Home_pageState extends State<Home_page> {
     Navigator.push(context,
         MaterialPageRoute(builder: (context)=> Servicos()));
   }
-
-
   
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: (Colors.cyan),
       title: Text("Planos de saude"),
       ),
       body: Container(
@@ -68,7 +67,7 @@ class _Home_pageState extends State<Home_page> {
                           ),
                         ),
                         GestureDetector(
-                          onTap: _abrirHome,
+                          onTap: _abrirSevicos,
                           child: Image.asset("images/Servicos.png"),
                         ),
                       ],
@@ -80,11 +79,11 @@ class _Home_pageState extends State<Home_page> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
                   GestureDetector(
-                    onTap: _abrirHome,
+                    onTap: _abrirClientes,
                     child: Image.asset("images/Cliente.png"),
                   ),
                   GestureDetector(
-                    onTap: _abrirHome,
+                    onTap: _abrirContatos,
                     child: Image.asset("images/Contato.png"),
                   ),
                 ],
